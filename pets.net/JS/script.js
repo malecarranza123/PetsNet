@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const inputBusqueda=document.getElementById('searchInput');//trae el texto del  usuario que agrego en el campo de buscar 
-    const botonesVet=document.querySelectorAll('.vet-locations a');//selecciona todos los botones que sean de esa clase(.vet-locations) 
+    const botonesVet=document.querySelectorAll('[data-localidad]');//selecciona todos los botones que sean de esa clase(.vet-locations) 
 
     inputBusqueda.addEventListener('input', function(){
         filtroVetLocalidad();
